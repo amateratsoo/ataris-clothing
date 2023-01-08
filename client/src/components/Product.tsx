@@ -27,8 +27,11 @@ function Product({ id, imageUrl, name, price }: ProductProps) {
 
   return (
     <div className='group flex flex-col bg-zinc-900 border border-zinc-800 w-72 h-72 rounded-md overflow-hidden group'>
-      <div className='flex-[2] overflow-hidden'>
-        <img src={imageUrl} />
+      <div className='flex-[2] overflow-hidden grid place-items-center'>
+        <img 
+          className='w-full'
+          src={imageUrl} 
+        />
       </div>
 
       <div className='flex-[1.5] flex flex-col align-start justify-center pl-6 gap-4'>
